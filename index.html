@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Cute cats</title>
+  <!-- npm run start -->
+</head>
+
+<body class="bg-color5 dark:bg-color3">
+  <header>
+    <div class="container">
+      <div class="flex justify-between items-center m-5">
+        <logo>
+          <h1 class="text-4xl font-bold text-color6 dark:text-color2 md:text-6xl">CUTE CATS</h1>
+        </logo>
+        <nav class="space-x-2 md:space-x-4">
+          <a href="#content"><button class="btn-menu md:">Перейти до котиків</button></a>
+          <button class="btn-menu">Потрогати котика</button>
+          <a href="#"><button class="btn-menu">Що нового?</button></a>
+          <button class="btn-menu" id="topic">Змінити тему</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="start">
+      <div class="container">
+        <h1 class="pt-[20px] mt-28 text-center text-4xl text-color6 font-bold dark:text-color1">Сайт для прегляду фото котенят</h1>
+        <p class="mt-2 mx-auto text-center text-color6 tracking-tight text-xl font-light dark:text-color5">Ласкаво просиво до нашого сайту з
+          котиками надіюсь вам буде цікаво</p>
+        <div class="flex justify-center pb-[34px] mb-32">
+          <button class="btn-menu mt-[32px] px-[10px] mx-auto max-w-xl text-center text-xl font-medium"><a
+              href="#">Переглянути новинки</a></button>
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="mt-[54px] container max-w-full bg-color3 border-y-4 border-color1 dark:bg-color1 dark:border-color5">
+        <h1 class=" mx-auto pt-[20px] text-center text-3xl font-semibold text-color2 uppercase dark:text-color6">Милі Котики</h1>
+        <div class="grid gap-4 grid-cols-2 my-[20px] mt-[25px] text-center pb-[25px]">
+          <div class="content-cats">
+            <img src="img/teb-full.jpg" alt="Зображення"
+              class="img-content-cats">
+            <div class="grow grid justify-items-stretch w-64 mr-[20px]">
+              <p id="content-1"
+                class="text-content-cats hidden">
+                Цей милий
+                котик дуже сюбить коли з ним весело проводят час. З першого погляду так не скажеш, але він дуже ніжний і
+                люить ласки. Якщо ви хочете завести собі такого котики бутьте обережні, бо він може загратися і
+                заподіяти вам невелику шкоду</p>
+              <button data-content-button="content-1"
+                class="btn-menu justify-self-center flex items-center mt-[26px] py-[8px] text-center">Прочитати
+                більше</button>
+            </div>
+          </div>
+          <div class="content-cats">
+            <img src="img/teb-full.jpg" alt="Зображення"
+              class="img-content-cats">
+            <div class="grow grid justify-items-stretch w-64 mr-[20px]">
+              <p id="content-2"
+                class="text-content-cats hidden">
+                Цей милий
+                котик дуже сюбить коли з ним весело проводят час. З першого погляду так не скажеш, але він дуже ніжний і
+                люить ласки. Якщо ви хочете завести собі такого котики бутьте обережні, бо він може загратися і
+                заподіяти вам невелику шкоду</p>
+              <button data-content-button="content-2"
+                class="btn-menu justify-self-center flex items-center mt-[26px] py-[8px] text-center">Прочитати
+                більше</button>
+            </div>
+          </div>
+          <div class="content-cats">
+            <img src="img/teb-full.jpg" alt="Зображення"
+              class="img-content-cats">
+            <div class="grow grid justify-items-stretch w-64 mr-[20px]">
+              <p id="content-3"
+                class="text-content-cats hidden">
+                Цей милий
+                котик дуже сюбить коли з ним весело проводят час. З першого погляду так не скажеш, але він дуже ніжний і
+                люить ласки. Якщо ви хочете завести собі такого котики бутьте обережні, бо він може загратися і
+                заподіяти вам невелику шкоду</p>
+              <button data-content-button="content-3"
+                class="btn-menu justify-self-center flex items-center mt-[26px] py-[8px] text-center">Прочитати
+                більше</button>
+            </div>
+          </div>
+          <div class="content-cats">
+            <img src="img/teb-full.jpg" alt="Зображення"
+              class="img-content-cats">
+            <div class="grow grid justify-items-stretch w-64 mr-[20px]">
+              <p id="content-4"
+                class="text-content-cats hidden">
+                Цей милий
+                котик дуже сюбить коли з ним весело проводят час. З першого погляду так не скажеш, але він дуже ніжний і
+                люить ласки. Якщо ви хочете завести собі такого котики бутьте обережні, бо він може загратися і
+                заподіяти вам невелику шкоду</p>
+              <button data-content-button="content-4"
+                class="btn-menu justify-self-center flex items-center mt-[26px] py-[8px] text-center">Прочитати
+                більше</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
