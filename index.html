@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenich Caffee House</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body class="bg-color1 dark:bg-color2">
+  <header class="fixed top-0 w-full bg-white shadow-md">
+    <div class="bg-color2 w-full max-w-full h-[100px]  dark:bg-color1 pt-[10px]">
+      <div class="container">
+        <div class="relative flex justify-between items-center space-x-4 pt-[20px]">
+          <p class="text-color1 text-4xl font-bold uppercase dark:text-color2">Logo</p>
+          <nav class="relative">
+            <div
+              class="flex items-center text-color1 text-lg font-light uppercase space-x-3 md:space-x-10 md:text-xl lg:text-2xl dark:text-color2 mt-auto">
+              <a href="#menu" class="hidden md:flex">меню</a>
+              <a href="#exclusive-drinks" class="hidden md:flex">ексклюзивні напої</a>
+              <a href="#tea" class="hidden md:flex">чай</a>
+              <button class="" id="topic">
+                <span class="dark:hidden">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-8 h-8 md:w-10 md:h-10 ">
+                    <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-color1 dark:stroke-color2"></path>
+                    <path
+                      d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                      class="stroke-color1 dark:stroke-color1"></path>
+                  </svg>
+                </span>
+                <span class="hidden dark:inline">
+                  <svg viewBox="0 0 24 24" fill="none" class="w-8 h-8 md:w-10 md:h-10 ">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                      class="fill-transparent"></path>
+                    <path
+                      d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                      class="fill-color1 dark:fill-color2"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+                      class="fill-color1 dark:fill-color3"></path>
+                  </svg>
+                </span>
+              </button>
+              <button class="felex md:hidden" id="open-model">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-8 h-8 md:w-10 md:h-10">
+                  <path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round"></path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="fixed hidden md:hidden">
+      <div class="bg-color2 text-color1 w-64 h-full absolute inset-y-0 right-0 modal-window dark:bg-color1 dark:text-color2">
+        <div>
+          <button type="button"
+            class="absolute z-10 top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+            tabindex="0" id="close-model">
+            <span class="sr-only">Close navigation</span>
+            <svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible">
+              <path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              </path>
+            </svg>
+          </button>
+          <nav
+            class="flex flex-col text-color1 text-xl font-semibold uppercase space-y-10 dark:text-color2 pt-[50px] ml-6 mt-16 ">
+            <a href="#menu">Меню</a>
+            <a href="#exclusive-drinks">ексклюзивні напої</a>
+            <a href="#tea">чай</a> 
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="bg-color1 w-full h-full dark:bg-color2">
+    <section class="menu" >
+      <div class="containe">
+        <div class="flex flex-col justify-center items-center bg-color1 w-full h-full dark:bg-color2 px-4 md:px-16">
+          <h1 id="menu" class="mt-[150px] border-b-[1px] border-b-color2 text-center text-color2 text-xl font-semibold uppercase space-x-3 md:space-x-10 md:text-2xl lg:text-4xl dark:text-color1 dark:border-b-color1 w-full mb-[20px]">Меню</h1>
+          <div class="grid gap-6 grid-cols-1 justify-items-stretch w-full md:grid-cols-2" >
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Еспресо</h2>
+              <h2>30</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Американо/з молоком</h2>
+              <h2>30/40</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Капучино</h2>
+              <h2>45</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Раф</h2>
+              <h2>50</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Флет-вайт</h2>
+              <h2>60</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Лате</h2>
+              <h2>50</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Фільтр кава</h2>
+              <h2>50</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Матча</h2>
+              <h2>60</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Какао</h2>
+              <h2>45</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Гарячий шоколад</h2>
+              <h2>40</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>+рослинне молоко</h2>
+              <h2>20</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>+сироп</h2>
+              <h2>5</h2>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <section class="exclusive-drinks">
+      <div class="containe">
+        <div class="flex flex-col justify-center items-center bg-color1 w-full h-full dark:bg-color2 mt-[40px] px-4 md:px-16">
+          <h1 id="exclusive-drinks" class="border-b-[1px] border-b-color2 text-center text-color2 text-xl font-semibold uppercase space-x-3 md:space-x-10 md:text-2xl lg:text-4xl dark:text-color1 dark:border-b-color1 w-full mb-[20px] mt-[35px]">ексклюзивні напої</h1>
+          <div class="grid gap-6 grid-cols-1 justify-items-stretch w-full md:grid-cols-2" >
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Полуничне лате</h2>
+              <h2>75</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Шоколадна кава</h2>
+              <h2>80</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Мокачино</h2>
+              <h2>65</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Бананове какао</h2>
+              <h2>75</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Халвове лате </h2>
+              <h2>70</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Kids</h2>
+              <h2>40</h2>
+            </div>
+    </section>
+    <section class="tea">
+      <div class="containe">
+        <div class="flex flex-col justify-center items-center bg-color1 w-full h-full dark:bg-color2 mt-[40px] px-4 md:px-16">
+          <h1 id="tea" class="border-b-[1px] border-b-color2 text-center text-color2 text-xl font-semibold uppercase space-x-3 md:space-x-10 md:text-2xl lg:text-4xl dark:text-color1 dark:border-b-color1 w-full mb-[20px] mt-[35px]">чай</h1>
+          <div class="grid gap-6 grid-cols-1 justify-items-stretch w-full md:grid-cols-2 mb-[35px]">
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Імбирний чай</h2>
+              <h2>65</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Ягідний чай</h2>
+              <h2>65</h2>
+            </div>
+            <div class="flex justify-between border-b-[1px] border-b-color2 text-center text-color2 text-sm font-light uppercase md:text-lg lg:text-2xl dark:text-color1 dark:border-b-color1">
+              <h2>Обліпиховий чай</h2>
+              <h2>65</h2>
+            </div>
+    </section>
+  </main>
+
+  <script src="static/js/index.js"></script>
+</body>
+
+</html>
