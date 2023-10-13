@@ -1,0 +1,31 @@
+#modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+.fixed-header{
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.logo {
+    /* Mask group */
+
+position: absolute;
+width: 215px;
+height: 64px;
+
+
+position: absolute;
+width: 215px;
+height: 64px;
+
+background: linear-gradient(0deg, #000000, #000000), url(photo_2023-10-02_10-31-02-removebg-preview.png);
+
+}
